@@ -1,0 +1,23 @@
+.profile-box {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.edit-button {
+    margin-left: 80%;
+    border: 0px solid white;
+    background: white;
+    color: rgb(7, 66, 39);
+    font-size: 15px;
+}
+.edit-button:hover {
+    cursor: pointer;
+    color: #4CAF50;
+}
