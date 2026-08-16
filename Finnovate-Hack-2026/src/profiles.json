@@ -1,3 +1,38 @@
 [
-    
+  {
+    "id": 1,
+    "company": "Allbirds",
+    "industry": "Footwear & Apparel",
+    "metrics": {
+      "carbonFootprintPerItem": "5.54 kg CO₂e",
+      "recycledMaterialsPercent": 85,
+      "packagingType": "100% Recycled & FSC-Certified Boxes",
+      "renewableEnergyPercent": 100,
+      "waterSavedPerUnit": "Natural Merino Wool & Tree Fibers"
+    }
+  },
+  {
+    "id": 2,
+    "company": "Patagonia",
+    "industry": "Outdoor Apparel",
+    "metrics": {
+      "carbonFootprintPerItem": "60% Lower via Worn Wear (Repaired)",
+      "recycledMaterialsPercent": 87,
+      "packagingType": "100% Recycled Polybags / Plastic-Free",
+      "renewableEnergyPercent": 100,
+      "waterSavedPerUnit": "100% Organic Cotton (Saves ~90% Water)"
+    }
+  },
+  {
+    "id": 3,
+    "company": "Etsy",
+    "industry": "E-Commerce Marketplace",
+    "metrics": {
+      "carbonFootprintPerItem": "100% Offset Shipping Emissions",
+      "recycledMaterialsPercent": 100,
+      "packagingType": "EcoEnclose 100% Recycled Mailers",
+      "renewableEnergyPercent": 100,
+      "waterSavedPerUnit": "N/A (Digital Platform Focus)"
+    }
+  }
 ]

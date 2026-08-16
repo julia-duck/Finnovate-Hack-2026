@@ -7,10 +7,18 @@ function App() {
   return (
     //html code here
     <div>
-     <h1 class="title">SUSTAINABUDDIES</h1>
+      <Header />
      <div style={{display: 'flex', justifyContent: 'center'}}>
         <input class="search-bar" placeholder="Search Companies" />
      </div>
+    </div>
+  )
+}
+
+function Header() {
+  return (
+    <div>
+      <h1 class="title">SUSTAINABUDDIES</h1>
     </div>
   )
 }
