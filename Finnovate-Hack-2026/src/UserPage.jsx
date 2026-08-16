@@ -3,16 +3,20 @@ import profiles from './profiles.json';
 /*import reactLogo from './assets/react.svg'*/
 import './App.css'
 
-function UserPage() {
-
+function UserPage() 
+{
+  var selected;
   return (
     //html code here
     <div>
       <Header />
-     <div style={{display: 'flex', justifyContent: 'center'}}>
-        <input className="search-bar" placeholder="Search Companies" />
-     </div>
-     <CompanyList />
+      <h1>Featured Companies:</h1>
+          {
+            // <div style={{display: 'flex', justifyContent: 'center'}}>
+            //     <input className="search-bar" placeholder="Search Companies" />
+            // </div>
+          }
+      <CompanyList />
     </div>
   )
 }
@@ -34,7 +38,7 @@ function CompanyList()
           </tr>
         </thead>
         <tbody key="tbody">
-          { profiles.map((company, i)=> (
+        { profiles.map((company, i)=> (
             <tr key={i}>
               <td>{company.company}</td>
               <td>{company.industry}</td>
@@ -44,7 +48,8 @@ function CompanyList()
               <td>{company.metrics.packagingType}</td>
               <td>{company.metrics.waterSavedPerUnit}</td>
             </tr>
-          ))}
+          ))
+        }
         </tbody>
       </table>
     </div>

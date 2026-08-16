@@ -6,6 +6,6 @@ import UserPage from './UserPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UserPage />
+    <App />
   </StrictMode>,
 )
