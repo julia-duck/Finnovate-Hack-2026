@@ -25,7 +25,6 @@ function Company({company, editCompany}) {
 function Editing({company, editCompany, setIsEditing}) {
     return (
         <div>
-            <Header />
             <div className="profile-box">
                 <h3>Edit Company Profile</h3>
                 <p>Company Name</p>
@@ -55,7 +54,6 @@ function Display({company, setIsEditing}) {
     }
     return (
         <div>
-            <Header />
             <div className="profile-box">
                 <h3>My Company Profile</h3>
                 <p><b>Company Name:</b> {company.company} </p>

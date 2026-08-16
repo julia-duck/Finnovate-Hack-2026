@@ -24,14 +24,13 @@ function App() {
 export function Home() {
   return ( 
     <div>
-      <Header />
+       <h1 className="title">SUSTAINABUDDIES</h1>
       <div style={{display: 'flex', justifyContent: 'center'}}>
         <div className="links">
          <NavLink to="/company">Company</NavLink>
           <NavLink to="/user">User</NavLink>
         </div>
        
-        <input className="search-bar" placeholder="Search Companies" />
       </div>
     </div>
   )
@@ -40,7 +39,7 @@ export function Home() {
 export function Header() {
   return (
     <div>
-      <h1 className="title">SUSTAINABUDDIES</h1>
+     
     </div>
   )
 }
