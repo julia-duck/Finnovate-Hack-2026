@@ -3,15 +3,19 @@ import { useState } from 'react'
 import './App.css'
 import {NavLink, Route, Routes} from 'react-router-dom'
 import Company from './Company.jsx'
+import UserPage from './UserPage.jsx'
+import companyData from './profiles.json'
 
 function App() {
-
+  const [company, editCompany] = useState(companyData[0]);
+  const [companies, setCompanies] = useState(companyData);
   return (
     //html code here
     <div>
      <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/company" element={<Company/>} />
+        <Route path="/company" element={<Company company={company} editCompany={editCompany} />} />
+        <Route path="/user" element={<UserPage companies={companies} />} />
       </Routes>
     </div>
   )
@@ -22,7 +26,11 @@ export function Home() {
     <div>
       <Header />
       <div style={{display: 'flex', justifyContent: 'center'}}>
-        <NavLink to="/company">Company</NavLink>
+        <div className="links">
+         <NavLink to="/company">Company</NavLink>
+          <NavLink to="/user">User</NavLink>
+        </div>
+       
         <input className="search-bar" placeholder="Search Companies" />
       </div>
     </div>

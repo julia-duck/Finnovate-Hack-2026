@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import profiles from './profiles.json';
 /*import reactLogo from './assets/react.svg'*/
 import './App.css'
 
-function UserPage() {
+function UserPage({companies}) {
 
   return (
     //html code here
@@ -12,12 +11,12 @@ function UserPage() {
      <div style={{display: 'flex', justifyContent: 'center'}}>
         <input className="search-bar" placeholder="Search Companies" />
      </div>
-     <CompanyList />
+     <CompanyList companies={companies} />
     </div>
   )
 }
 
-function CompanyList() 
+function CompanyList({ companies }) 
 {
   return (
     <div>
@@ -34,7 +33,7 @@ function CompanyList()
           </tr>
         </thead>
         <tbody key="tbody">
-          { profiles.map((company, i)=> (
+          { companies.map((company, i)=> (
             <tr key={i}>
               <td>{company.company}</td>
               <td>{company.industry}</td>
