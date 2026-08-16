@@ -1,37 +1,37 @@
 [
   {
     "id": 1,
-    "company": "Allbirds",
+    "company": "Impulse Guard",
     "industry": "Footwear & Apparel",
     "metrics": {
-      "carbonFootprintPerItem": "5.54 kg CO₂e",
+      "carbonFootprintScore": 9,
       "recycledMaterialsPercent": 85,
-      "packagingType": "100% Recycled & FSC-Certified Boxes",
       "renewableEnergyPercent": 100,
+      "packagingType": "100% Recycled & FSC-Certified Boxes",
       "waterSavedPerUnit": "Natural Merino Wool & Tree Fibers"
     }
   },
   {
     "id": 2,
-    "company": "Patagonia",
+    "company": "Outerwear",
     "industry": "Outdoor Apparel",
     "metrics": {
-      "carbonFootprintPerItem": "60% Lower via Worn Wear (Repaired)",
+      "carbonFootprintScore": 5,
+      "renewableEnergyPercent": 80,
       "recycledMaterialsPercent": 87,
       "packagingType": "100% Recycled Polybags / Plastic-Free",
-      "renewableEnergyPercent": 100,
       "waterSavedPerUnit": "100% Organic Cotton (Saves ~90% Water)"
     }
   },
   {
     "id": 3,
-    "company": "Etsy",
-    "industry": "E-Commerce Marketplace",
+    "company": "MyStore",
+    "industry": "E-Commerce",
     "metrics": {
-      "carbonFootprintPerItem": "100% Offset Shipping Emissions",
+      "carbonFootprintScore": 4,
       "recycledMaterialsPercent": 100,
+      "renewableEnergyPercent": 50,
       "packagingType": "EcoEnclose 100% Recycled Mailers",
-      "renewableEnergyPercent": 100,
       "waterSavedPerUnit": "N/A (Digital Platform Focus)"
     }
   }
