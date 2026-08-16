@@ -1,0 +1,8 @@
+.title {
+    text-align: center;
+}
+.search-bar {
+    min-width: 500px;
+    min-height: 50px;
+    margin-right: 300px;
+}

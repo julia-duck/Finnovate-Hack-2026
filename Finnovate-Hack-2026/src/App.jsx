@@ -6,7 +6,12 @@ function App() {
 
   return (
     //html code here
-     <h1>Welcome to our website!</h1>
+    <div>
+     <h1 class="title">SUSTAINABUDDIES</h1>
+     <div style={{display: 'flex', justifyContent: 'center'}}>
+        <input class="search-bar" placeholder="Search Companies" />
+     </div>
+    </div>
   )
 }
 
