@@ -2,16 +2,20 @@ import { useState } from 'react'
 /*import reactLogo from './assets/react.svg'*/
 import './App.css'
 
-function UserPage({companies}) {
-
+function UserPage() 
+{
+  var selected;
   return (
     //html code here
     <div>
       <Header />
-     <div style={{display: 'flex', justifyContent: 'center'}}>
-        <input className="search-bar" placeholder="Search Companies" />
-     </div>
-     <CompanyList companies={companies} />
+      <h1>Featured Companies:</h1>
+          {
+            // <div style={{display: 'flex', justifyContent: 'center'}}>
+            //     <input className="search-bar" placeholder="Search Companies" />
+            // </div>
+          }
+      <CompanyList />
     </div>
   )
 }
@@ -33,7 +37,7 @@ function CompanyList({ companies })
           </tr>
         </thead>
         <tbody key="tbody">
-          { companies.map((company, i)=> (
+        { profiles.map((company, i)=> (
             <tr key={i}>
               <td>{company.company}</td>
               <td>{company.industry}</td>
@@ -43,7 +47,8 @@ function CompanyList({ companies })
               <td>{company.metrics.packagingType}</td>
               <td>{company.metrics.waterSavedPerUnit}</td>
             </tr>
-          ))}
+          ))
+        }
         </tbody>
       </table>
     </div>

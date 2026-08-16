@@ -2,7 +2,7 @@
   {
     "id": 1,
     "company": "Impulse Guard",
-    "industry": "Footwear & Apparel",
+    "industry": "Apparel",
     "metrics": {
       "carbonFootprintScore": 9,
       "recycledMaterialsPercent": 85,
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "company": "Outerwear",
-    "industry": "Outdoor Apparel",
+    "industry": "Apparel",
     "metrics": {
       "carbonFootprintScore": 5,
       "renewableEnergyPercent": 80,
